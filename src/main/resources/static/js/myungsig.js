@@ -2,6 +2,9 @@ var sex_type = 1;
 
 function startMyungsig (birthday, time) {
     console.log("startMyungsig");
+    console.log(birthday);
+    console.log(time);
+
     stopClock();
     
     // 1984-04-28

@@ -163,17 +163,6 @@ function umyang_print_fun(in_umyang,in_real_hae, in_dal,in_nal) {
     if(in_umyang=="umum" || in_umyang=="yangum") {
         document.frm_nal.txt_um.value= ymd_hap;
     } else {
-        var in_hour = document.frm_nal.sel_hour.selectedIndex;
-        var in_min = document.frm_nal.sel_min.selectedIndex;
-        if (in_dal < 10) in_dal = '0' + in_dal;
-        if (in_nal < 10) in_nal = '0' + in_nal;
-        if (in_hour < 10) in_hour = '0' + in_hour;
-        if (in_min < 10) in_min = '0' + in_min;
-
-        var x = in_real_hae + '-' + in_dal + '-' + in_nal
-        var y = in_hour + ':' + in_min;
-        startMyungsig(x, y);
-
         document.frm_nal.txt_yang.value= ymd_hap;
     }
 }
