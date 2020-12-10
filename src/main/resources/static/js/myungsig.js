@@ -1,5 +1,17 @@
 var sex_type = 1;
 
+engKanzhi = [
+    'top11_bottom52', 'top12_bottom34', 'top21_bottom11', 'top22_bottom12', 'top31_bottom31', 'top32_bottom21', 'top41_bottom22', 'top42_bottom32', 'top51_bottom41', 'top52_bottom42',
+    'top11_bottom33', 'top12_bottom51', 'top21_bottom52', 'top22_bottom34', 'top31_bottom11', 'top32_bottom12', 'top41_bottom31', 'top42_bottom21', 'top51_bottom22', 'top52_bottom32',
+    'top11_bottom41', 'top12_bottom42', 'top21_bottom33', 'top22_bottom51', 'top31_bottom52', 'top32_bottom34', 'top41_bottom11', 'top42_bottom12', 'top51_bottom31', 'top52_bottom21',
+    'top11_bottom22', 'top12_bottom32', 'top21_bottom41', 'top22_bottom42', 'top31_bottom33', 'top32_bottom51', 'top41_bottom52', 'top42_bottom34', 'top51_bottom11', 'top52_bottom12',
+    'top11_bottom31', 'top12_bottom21', 'top21_bottom22', 'top22_bottom32', 'top31_bottom41', 'top32_bottom42', 'top41_bottom33', 'top42_bottom51', 'top51_bottom52', 'top52_bottom34',
+    'top11_bottom11', 'top12_bottom12', 'top21_bottom31', 'top22_bottom21', 'top31_bottom22', 'top32_bottom32', 'top41_bottom41', 'top42_bottom42', 'top51_bottom33', 'top52_bottom51'
+]
+
+
+
+
 function startMyungsig (birthday, time) {
     console.log("startMyungsig");
     console.log(birthday);
@@ -71,17 +83,23 @@ function showMyungsig(millHours, millMinutes) {
     shiKanzhi = allKanzhi[parseInt(((tKNum % 5) * 12 + ((hours+1) / 2)) % 60, 10) ];
 
 
-    $("#kan_year").text(kanzhi.substr(0, 1));
-    $("#zhi_year").text(kanzhi.substr(1, 1));
+    $('[name=topYear]').text(kanzhi.substr(0, 1));
+    $('[name=bottomYear]').text(kanzhi.substr(1, 1));
+    $('[name=topMonth]').text(allKanzhi[monthKanzhiNum].substr(0, 1));
+    $('[name=bottomMonth]').text(allKanzhi[monthKanzhiNum].substr(1, 1));
+    $('[name=topDay]').text(allKanzhi[todayKanzhiNum].substr(0, 1));
+    $('[name=bottomDay]').text(allKanzhi[todayKanzhiNum].substr(1, 1));
+    $('[name=topHour]').text(shiKanzhi.substr(0, 1));
+    $('[name=bottomHour]').text(shiKanzhi.substr(1, 1));
 
-    $("#kan_month").text(allKanzhi[monthKanzhiNum].substr(0, 1));
-    $("#zhi_month").text(allKanzhi[monthKanzhiNum].substr(1, 1));
-
-    $("#kan_date").text(allKanzhi[todayKanzhiNum].substr(0, 1));
-    $("#zhi_date").text(allKanzhi[todayKanzhiNum].substr(1, 1));
-
-    $("#kan_hour").text(shiKanzhi.substr(0, 1));
-    $("#zhi_hour").text(shiKanzhi.substr(1, 1));
+    $('#topYear').val(engKanzhi[kanzhiNum].split('_')[0]);
+    $('#bottomYear').val(engKanzhi[kanzhiNum].split('_')[1]);
+    $('#topMonth').val(engKanzhi[monthKanzhiNum].split('_')[0]);
+    $('#bottomMonth').val(engKanzhi[monthKanzhiNum].split('_')[1]);
+    $('#topDay').val(engKanzhi[todayKanzhiNum].split('_')[0]);
+    $('#bottomDay').val(engKanzhi[todayKanzhiNum].split('_')[1]);
+    $('#topHour').val(engKanzhi[parseInt(((tKNum % 5) * 12 + ((hours+1) / 2)) % 60, 10) ].split('_')[0]);
+    $('#bottomHour').val(engKanzhi[parseInt(((tKNum % 5) * 12 + ((hours+1) / 2)) % 60, 10) ].split('_')[1]);
 
     $('#saju').empty();
     let html = '';

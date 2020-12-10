@@ -164,22 +164,52 @@
                 <th>時</th><th>日</th><th>月</th><th>年</th>
             </tr>
             <tr>
-                <td id="kan_hour"></td>
-                <td id="kan_date"></td>
-                <td id="kan_month"></td>
-                <td id="kan_year"></td>
+                <td name="topHour"></td>
+                <td name="topDay"></td>
+                <td name="topMonth"></td>
+                <td name="topYear"></td>
             </tr>
             <tr>
-                <td id="zhi_hour"></td>
-                <td id="zhi_date"></td>
-                <td id="zhi_month"></td>
-                <td id="zhi_year"></td>
+                <td name="bottomHour"></td>
+                <td name="bottomDay"></td>
+                <td name="bottomMonth"></td>
+                <td name="bottomYear"></td>
             </tr>
         </table>
         <div id="daeun"></div>
-
         <br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
+
+    <input type="hidden" id="topYear">
+    <input type="hidden" id="topMonth">
+    <input type="hidden" id="topDay">
+    <input type="hidden" id="topHour">
+    <input type="hidden" id="bottomYear">
+    <input type="hidden" id="bottomMonth">
+    <input type="hidden" id="bottomDay">
+    <input type="hidden" id="bottomHour">
+
+
+
+
+<script>
+
+$.ajax({
+    url: "",
+    type: "",
+    dataType: "json",
+    data: "",
+    success: function(data){
+
+    },
+    error: function (request, status, error){
+
+    }
+});
+
+
+
+</script>
 </div>
 </body>
 </html>
