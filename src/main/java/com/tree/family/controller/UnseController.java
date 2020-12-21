@@ -35,7 +35,9 @@ public class UnseController {
 
         // 육신 카운트
         kanzhiService.kanzhiCount(kanzhi);
-        logger.info(":::::::::::::::::::::::::::::::::::::::::::::::");
+        logger.info("육신 카운트 완료");
+
+
 
         Map map = new HashMap();
         map.put("kanzhi", kanzhi);

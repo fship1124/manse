@@ -58,6 +58,14 @@ public class KanzhiVO {
     private int bottomCnt52;   // 자 개수
     private int bottomCnt34;   // 축 개수
 
+    private String topYearFlesh;         // 년간 육신(육친)
+    private String topMonthFlesh;        // 월간 육신(육친)
+    private String topHourFlesh;         // 시간 육신(육친)
+    private String bottomYearFlesh;     // 년지 육신(육친)
+    private String bottomMonthFlesh;    // 월지 육신(육친)
+    private String bottomDayFlesh;      // 일지 육신(육친)
+    private String bottomHourFlesh;     // 시지 육신(육친)
+
     private int bgCnt = 0;  // 비견 개수
     private int gjCnt = 0;  // 겁재 개수
     private int ssCnt = 0;  // 식신 개수
@@ -483,6 +491,62 @@ public class KanzhiVO {
 
     public void setBottomCnt34(int bottomCnt34) {
         this.bottomCnt34 = bottomCnt34;
+    }
+
+    public String getTopYearFlesh() {
+        return topYearFlesh;
+    }
+
+    public void setTopYearFlesh(String topYearFlesh) {
+        this.topYearFlesh = topYearFlesh;
+    }
+
+    public String getTopMonthFlesh() {
+        return topMonthFlesh;
+    }
+
+    public void setTopMonthFlesh(String topMonthFlesh) {
+        this.topMonthFlesh = topMonthFlesh;
+    }
+
+    public String getTopHourFlesh() {
+        return topHourFlesh;
+    }
+
+    public void setTopHourFlesh(String topHourFlesh) {
+        this.topHourFlesh = topHourFlesh;
+    }
+
+    public String getBottomYearFlesh() {
+        return bottomYearFlesh;
+    }
+
+    public void setBottomYearFlesh(String bottomYearFlesh) {
+        this.bottomYearFlesh = bottomYearFlesh;
+    }
+
+    public String getBottomMonthFlesh() {
+        return bottomMonthFlesh;
+    }
+
+    public void setBottomMonthFlesh(String bottomMonthFlesh) {
+        this.bottomMonthFlesh = bottomMonthFlesh;
+    }
+
+    public String getBottomDayFlesh() {
+        return bottomDayFlesh;
+    }
+
+    public void setBottomDayFlesh(String bottomDayFlesh) {
+        this.bottomDayFlesh = bottomDayFlesh;
+    }
+
+    public String getBottomHourFlesh() {
+        return bottomHourFlesh;
+    }
+
+    public void setBottomHourFlesh(String bottomHourFlesh) {
+        this.bottomHourFlesh = bottomHourFlesh;
     }
 
     public int getBgCnt() {

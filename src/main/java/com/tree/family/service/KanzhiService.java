@@ -31,6 +31,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top12")) {
                 kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
             }
@@ -51,6 +52,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top21")) {
                 kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
             }
@@ -71,6 +73,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top22")) {
                 kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
             }
@@ -91,6 +94,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top31")) {
                 kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
             }
@@ -120,6 +124,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top32")) {
                 kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
             }
@@ -149,6 +154,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top41")) {
                 kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
             }
@@ -169,6 +175,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top42")) {
                 kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
             }
@@ -189,6 +196,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top51")) {
                 kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
             }
@@ -209,6 +217,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top52")) {
                 kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
             }
@@ -248,6 +257,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top12")) {
                 kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
             }
@@ -268,6 +278,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top21")) {
                 kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
             }
@@ -288,6 +299,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top22")) {
                 kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
             }
@@ -308,6 +320,7 @@ public class KanzhiService {
             }
 
 
+            //
             if (kanzhi.getTopYear().equals("top31")) {
                 kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
             }
@@ -1313,139 +1326,1104 @@ public class KanzhiService {
 
 
             //
-            if (kanzhi.getTopYear().equals("top51") || kanzhi.getTopMonth().equals("top51") || kanzhi.getTopHour().equals("top51") || kanzhi.getBottomYear().equals("bottom51") || kanzhi.getBottomMonth().equals("bottom51") || kanzhi.getBottomHour().equals("bottom51")) {
+            if (kanzhi.getTopYear().equals("top51")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getTopMonth().equals("top51")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top51")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom51")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom51")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom51")) {
                 kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
             }
 
 
             //
-            if (kanzhi.getTopYear().equals("top52") || kanzhi.getTopMonth().equals("top52") || kanzhi.getTopHour().equals("top52") || kanzhi.getBottomYear().equals("bottom52") || kanzhi.getBottomMonth().equals("bottom52") || kanzhi.getBottomHour().equals("bottom52")) {
+            if (kanzhi.getTopYear().equals("top52")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getTopMonth().equals("top52")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top52")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom52")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom52")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom52")) {
                 kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
             }
         } else if (kanzhi.getTopDay().equals("top41")) {
-            if (kanzhi.getTopYear().equals("top11") || kanzhi.getTopMonth().equals("top11") || kanzhi.getTopHour().equals("top11") || kanzhi.getBottomYear().equals("bottom11") || kanzhi.getBottomMonth().equals("bottom11") || kanzhi.getBottomHour().equals("bottom11")) {
+            if (kanzhi.getTopYear().equals("top11")) {
                 kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top12") || kanzhi.getTopMonth().equals("top12") || kanzhi.getTopHour().equals("top12") || kanzhi.getBottomYear().equals("bottom12") || kanzhi.getBottomMonth().equals("bottom12") || kanzhi.getBottomHour().equals("bottom12")) {
+            if (kanzhi.getTopMonth().equals("top11")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top11")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom11")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom11")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom11")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top12")) {
                 kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top21") || kanzhi.getTopMonth().equals("top21") || kanzhi.getTopHour().equals("top21") || kanzhi.getBottomYear().equals("bottom21") || kanzhi.getBottomMonth().equals("bottom21") || kanzhi.getBottomHour().equals("bottom21")) {
+            if (kanzhi.getTopMonth().equals("top12")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top12")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom12")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom12")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom12")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top21")) {
                 kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top22") || kanzhi.getTopMonth().equals("top22") || kanzhi.getTopHour().equals("top22") || kanzhi.getBottomYear().equals("bottom22") || kanzhi.getBottomMonth().equals("bottom22") || kanzhi.getBottomHour().equals("bottom22")) {
+            if (kanzhi.getTopMonth().equals("top21")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top21")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom21")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom21")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom21")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top22")) {
                 kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top31") || kanzhi.getTopMonth().equals("top31") || kanzhi.getTopHour().equals("top31") || kanzhi.getBottomYear().equals("bottom31") || kanzhi.getBottomMonth().equals("bottom31") || kanzhi.getBottomHour().equals("bottom31") || kanzhi.getBottomYear().equals("bottom33") || kanzhi.getBottomMonth().equals("bottom33") || kanzhi.getBottomHour().equals("bottom33")) {
+            if (kanzhi.getTopMonth().equals("top22")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top22")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom22")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom22")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom22")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top31")) {
                 kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top32") || kanzhi.getTopMonth().equals("top32") || kanzhi.getTopHour().equals("top32") || kanzhi.getBottomYear().equals("bottom32") || kanzhi.getBottomMonth().equals("bottom32") || kanzhi.getBottomHour().equals("bottom32") || kanzhi.getBottomYear().equals("bottom34") || kanzhi.getBottomMonth().equals("bottom34") || kanzhi.getBottomHour().equals("bottom34")) {
+            if (kanzhi.getTopMonth().equals("top31")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top31")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom31")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom31")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom31")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom33")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom33")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom33")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top32")) {
                 kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top41") || kanzhi.getTopMonth().equals("top41") || kanzhi.getTopHour().equals("top41") || kanzhi.getBottomYear().equals("bottom41") || kanzhi.getBottomMonth().equals("bottom41") || kanzhi.getBottomHour().equals("bottom41")) {
+            if (kanzhi.getTopMonth().equals("top32")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top32")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom32")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom32")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom32")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom34")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom34")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom34")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top41")) {
                 kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top42") || kanzhi.getTopMonth().equals("top42") || kanzhi.getTopHour().equals("top42") || kanzhi.getBottomYear().equals("bottom42") || kanzhi.getBottomMonth().equals("bottom42") || kanzhi.getBottomHour().equals("bottom42")) {
+            if (kanzhi.getTopMonth().equals("top41")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top41")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom41")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom41")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom41")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top42")) {
                 kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top51") || kanzhi.getTopMonth().equals("top51") || kanzhi.getTopHour().equals("top51") || kanzhi.getBottomYear().equals("bottom51") || kanzhi.getBottomMonth().equals("bottom51") || kanzhi.getBottomHour().equals("bottom51")) {
+            if (kanzhi.getTopMonth().equals("top42")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top42")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom42")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom42")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom42")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top51")) {
                 kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top52") || kanzhi.getTopMonth().equals("top52") || kanzhi.getTopHour().equals("top52") || kanzhi.getBottomYear().equals("bottom52") || kanzhi.getBottomMonth().equals("bottom52") || kanzhi.getBottomHour().equals("bottom52")) {
+            if (kanzhi.getTopMonth().equals("top51")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top51")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom51")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom51")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom51")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top52")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getTopMonth().equals("top52")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top52")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom52")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom52")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom52")) {
                 kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
             }
         } else if (kanzhi.getTopDay().equals("top42")) {
-            if (kanzhi.getTopYear().equals("top11") || kanzhi.getTopMonth().equals("top11") || kanzhi.getTopHour().equals("top11") || kanzhi.getBottomYear().equals("bottom11") || kanzhi.getBottomMonth().equals("bottom11") || kanzhi.getBottomHour().equals("bottom11")) {
+            if (kanzhi.getTopYear().equals("top11")) {
                 kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top12") || kanzhi.getTopMonth().equals("top12") || kanzhi.getTopHour().equals("top12") || kanzhi.getBottomYear().equals("bottom12") || kanzhi.getBottomMonth().equals("bottom12") || kanzhi.getBottomHour().equals("bottom12")) {
+            if (kanzhi.getTopMonth().equals("top11")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top11")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom11")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom11")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom11")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top12")) {
                 kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top21") || kanzhi.getTopMonth().equals("top21") || kanzhi.getTopHour().equals("top21") || kanzhi.getBottomYear().equals("bottom21") || kanzhi.getBottomMonth().equals("bottom21") || kanzhi.getBottomHour().equals("bottom21")) {
+            if (kanzhi.getTopMonth().equals("top12")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top12")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom12")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom12")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom12")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top21")) {
                 kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top22") || kanzhi.getTopMonth().equals("top22") || kanzhi.getTopHour().equals("top22") || kanzhi.getBottomYear().equals("bottom22") || kanzhi.getBottomMonth().equals("bottom22") || kanzhi.getBottomHour().equals("bottom22")) {
+            if (kanzhi.getTopMonth().equals("top21")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top21")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom21")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom21")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom21")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top22")) {
                 kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top31") || kanzhi.getTopMonth().equals("top31") || kanzhi.getTopHour().equals("top31") || kanzhi.getBottomYear().equals("bottom31") || kanzhi.getBottomMonth().equals("bottom31") || kanzhi.getBottomHour().equals("bottom31") || kanzhi.getBottomYear().equals("bottom33") || kanzhi.getBottomMonth().equals("bottom33") || kanzhi.getBottomHour().equals("bottom33")) {
+            if (kanzhi.getTopMonth().equals("top22")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top22")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom22")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom22")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom22")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top31")) {
                 kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top32") || kanzhi.getTopMonth().equals("top32") || kanzhi.getTopHour().equals("top32") || kanzhi.getBottomYear().equals("bottom32") || kanzhi.getBottomMonth().equals("bottom32") || kanzhi.getBottomHour().equals("bottom32") || kanzhi.getBottomYear().equals("bottom34") || kanzhi.getBottomMonth().equals("bottom34") || kanzhi.getBottomHour().equals("bottom34")) {
+            if (kanzhi.getTopMonth().equals("top31")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top31")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom31")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom31")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom31")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom33")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom33")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom33")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top32")) {
                 kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top41") || kanzhi.getTopMonth().equals("top41") || kanzhi.getTopHour().equals("top41") || kanzhi.getBottomYear().equals("bottom41") || kanzhi.getBottomMonth().equals("bottom41") || kanzhi.getBottomHour().equals("bottom41")) {
+            if (kanzhi.getTopMonth().equals("top32")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top32")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom32")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom32")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom32")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom34")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom34")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom34")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top41")) {
                 kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top42") || kanzhi.getTopMonth().equals("top42") || kanzhi.getTopHour().equals("top42") || kanzhi.getBottomYear().equals("bottom42") || kanzhi.getBottomMonth().equals("bottom42") || kanzhi.getBottomHour().equals("bottom42")) {
+            if (kanzhi.getTopMonth().equals("top41")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top41")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom41")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom41")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom41")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top42")) {
                 kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top51") || kanzhi.getTopMonth().equals("top51") || kanzhi.getTopHour().equals("top51") || kanzhi.getBottomYear().equals("bottom51") || kanzhi.getBottomMonth().equals("bottom51") || kanzhi.getBottomHour().equals("bottom51")) {
+            if (kanzhi.getTopMonth().equals("top42")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top42")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom42")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom42")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom42")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top51")) {
                 kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top52") || kanzhi.getTopMonth().equals("top52") || kanzhi.getTopHour().equals("top52") || kanzhi.getBottomYear().equals("bottom52") || kanzhi.getBottomMonth().equals("bottom52") || kanzhi.getBottomHour().equals("bottom52")) {
+            if (kanzhi.getTopMonth().equals("top51")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top51")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom51")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom51")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom51")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top52")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getTopMonth().equals("top52")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top52")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom52")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom52")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom52")) {
                 kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
             }
         } else if (kanzhi.getTopDay().equals("top51")) {
-            if (kanzhi.getTopYear().equals("top11") || kanzhi.getTopMonth().equals("top11") || kanzhi.getTopHour().equals("top11") || kanzhi.getBottomYear().equals("bottom11") || kanzhi.getBottomMonth().equals("bottom11") || kanzhi.getBottomHour().equals("bottom11")) {
+            if (kanzhi.getTopYear().equals("top11")) {
                 kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top12") || kanzhi.getTopMonth().equals("top12") || kanzhi.getTopHour().equals("top12") || kanzhi.getBottomYear().equals("bottom12") || kanzhi.getBottomMonth().equals("bottom12") || kanzhi.getBottomHour().equals("bottom12")) {
+            if (kanzhi.getTopMonth().equals("top11")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top11")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom11")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom11")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom11")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top12")) {
                 kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top21") || kanzhi.getTopMonth().equals("top21") || kanzhi.getTopHour().equals("top21") || kanzhi.getBottomYear().equals("bottom21") || kanzhi.getBottomMonth().equals("bottom21") || kanzhi.getBottomHour().equals("bottom21")) {
+            if (kanzhi.getTopMonth().equals("top12")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top12")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom12")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom12")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom12")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top21")) {
                 kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top22") || kanzhi.getTopMonth().equals("top22") || kanzhi.getTopHour().equals("top22") || kanzhi.getBottomYear().equals("bottom22") || kanzhi.getBottomMonth().equals("bottom22") || kanzhi.getBottomHour().equals("bottom22")) {
+            if (kanzhi.getTopMonth().equals("top21")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top21")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom21")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom21")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom21")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top22")) {
                 kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top31") || kanzhi.getTopMonth().equals("top31") || kanzhi.getTopHour().equals("top31") || kanzhi.getBottomYear().equals("bottom31") || kanzhi.getBottomMonth().equals("bottom31") || kanzhi.getBottomHour().equals("bottom31") || kanzhi.getBottomYear().equals("bottom33") || kanzhi.getBottomMonth().equals("bottom33") || kanzhi.getBottomHour().equals("bottom33")) {
+            if (kanzhi.getTopMonth().equals("top22")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top22")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom22")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom22")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom22")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top31")) {
                 kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top32") || kanzhi.getTopMonth().equals("top32") || kanzhi.getTopHour().equals("top32") || kanzhi.getBottomYear().equals("bottom32") || kanzhi.getBottomMonth().equals("bottom32") || kanzhi.getBottomHour().equals("bottom32") || kanzhi.getBottomYear().equals("bottom34") || kanzhi.getBottomMonth().equals("bottom34") || kanzhi.getBottomHour().equals("bottom34")) {
+            if (kanzhi.getTopMonth().equals("top31")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top31")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom31")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom31")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom31")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom33")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom33")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom33")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top32")) {
                 kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top41") || kanzhi.getTopMonth().equals("top41") || kanzhi.getTopHour().equals("top41") || kanzhi.getBottomYear().equals("bottom41") || kanzhi.getBottomMonth().equals("bottom41") || kanzhi.getBottomHour().equals("bottom41")) {
+            if (kanzhi.getTopMonth().equals("top32")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top32")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom32")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom32")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom32")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom34")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom34")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom34")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top41")) {
                 kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top42") || kanzhi.getTopMonth().equals("top42") || kanzhi.getTopHour().equals("top42") || kanzhi.getBottomYear().equals("bottom42") || kanzhi.getBottomMonth().equals("bottom42") || kanzhi.getBottomHour().equals("bottom42")) {
+            if (kanzhi.getTopMonth().equals("top41")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top41")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom41")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom41")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom41")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top42")) {
                 kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top51") || kanzhi.getTopMonth().equals("top51") || kanzhi.getTopHour().equals("top51") || kanzhi.getBottomYear().equals("bottom51") || kanzhi.getBottomMonth().equals("bottom51") || kanzhi.getBottomHour().equals("bottom51")) {
+            if (kanzhi.getTopMonth().equals("top42")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top42")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom42")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom42")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom42")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top51")) {
                 kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top52") || kanzhi.getTopMonth().equals("top52") || kanzhi.getTopHour().equals("top52") || kanzhi.getBottomYear().equals("bottom52") || kanzhi.getBottomMonth().equals("bottom52") || kanzhi.getBottomHour().equals("bottom52")) {
+            if (kanzhi.getTopMonth().equals("top51")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top51")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom51")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom51")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom51")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top52")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getTopMonth().equals("top52")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top52")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom52")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom52")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom52")) {
                 kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
             }
         } else if (kanzhi.getTopDay().equals("top52")) {
-            if (kanzhi.getTopYear().equals("top11") || kanzhi.getTopMonth().equals("top11") || kanzhi.getTopHour().equals("top11") || kanzhi.getBottomYear().equals("bottom11") || kanzhi.getBottomMonth().equals("bottom11") || kanzhi.getBottomHour().equals("bottom11")) {
+            if (kanzhi.getTopYear().equals("top11")) {
                 kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top12") || kanzhi.getTopMonth().equals("top12") || kanzhi.getTopHour().equals("top12") || kanzhi.getBottomYear().equals("bottom12") || kanzhi.getBottomMonth().equals("bottom12") || kanzhi.getBottomHour().equals("bottom12")) {
+            if (kanzhi.getTopMonth().equals("top11")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top11")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom11")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom11")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom11")) {
+                kanzhi.setSgCnt(kanzhi.getSgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top12")) {
                 kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top21") || kanzhi.getTopMonth().equals("top21") || kanzhi.getTopHour().equals("top21") || kanzhi.getBottomYear().equals("bottom21") || kanzhi.getBottomMonth().equals("bottom21") || kanzhi.getBottomHour().equals("bottom21")) {
+            if (kanzhi.getTopMonth().equals("top12")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top12")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom12")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom12")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom12")) {
+                kanzhi.setSsCnt(kanzhi.getSsCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top21")) {
                 kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top22") || kanzhi.getTopMonth().equals("top22") || kanzhi.getTopHour().equals("top22") || kanzhi.getBottomYear().equals("bottom22") || kanzhi.getBottomMonth().equals("bottom22") || kanzhi.getBottomHour().equals("bottom22")) {
+            if (kanzhi.getTopMonth().equals("top21")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top21")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom21")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom21")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom21")) {
+                kanzhi.setJjCnt(kanzhi.getJjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top22")) {
                 kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top31") || kanzhi.getTopMonth().equals("top31") || kanzhi.getTopHour().equals("top31") || kanzhi.getBottomYear().equals("bottom31") || kanzhi.getBottomMonth().equals("bottom31") || kanzhi.getBottomHour().equals("bottom31") || kanzhi.getBottomYear().equals("bottom33") || kanzhi.getBottomMonth().equals("bottom33") || kanzhi.getBottomHour().equals("bottom33")) {
+            if (kanzhi.getTopMonth().equals("top22")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top22")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom22")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom22")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom22")) {
+                kanzhi.setPjCnt(kanzhi.getPjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top31")) {
                 kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top32") || kanzhi.getTopMonth().equals("top32") || kanzhi.getTopHour().equals("top32") || kanzhi.getBottomYear().equals("bottom32") || kanzhi.getBottomMonth().equals("bottom32") || kanzhi.getBottomHour().equals("bottom32") || kanzhi.getBottomYear().equals("bottom34") || kanzhi.getBottomMonth().equals("bottom34") || kanzhi.getBottomHour().equals("bottom34")) {
+            if (kanzhi.getTopMonth().equals("top31")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top31")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom31")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom31")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom31")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom33")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom33")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom33")) {
+                kanzhi.setJgCnt(kanzhi.getJgCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top32")) {
                 kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top41") || kanzhi.getTopMonth().equals("top41") || kanzhi.getTopHour().equals("top41") || kanzhi.getBottomYear().equals("bottom41") || kanzhi.getBottomMonth().equals("bottom41") || kanzhi.getBottomHour().equals("bottom41")) {
+            if (kanzhi.getTopMonth().equals("top32")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top32")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom32")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom32")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom32")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom34")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom34")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom34")) {
+                kanzhi.setPgCnt(kanzhi.getPgCnt() + 1);
+            }
+
+            //
+            if (kanzhi.getTopYear().equals("top41")) {
                 kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top42") || kanzhi.getTopMonth().equals("top42") || kanzhi.getTopHour().equals("top42") || kanzhi.getBottomYear().equals("bottom42") || kanzhi.getBottomMonth().equals("bottom42") || kanzhi.getBottomHour().equals("bottom42")) {
+            if (kanzhi.getTopMonth().equals("top41")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top41")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom41")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom41")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom41")) {
+                kanzhi.setJiCnt(kanzhi.getJiCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top42")) {
                 kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top51") || kanzhi.getTopMonth().equals("top51") || kanzhi.getTopHour().equals("top51") || kanzhi.getBottomYear().equals("bottom51") || kanzhi.getBottomMonth().equals("bottom51") || kanzhi.getBottomHour().equals("bottom51")) {
+            if (kanzhi.getTopMonth().equals("top42")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top42")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom42")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom42")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom42")) {
+                kanzhi.setPiCnt(kanzhi.getPiCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top51")) {
                 kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
             }
-            if (kanzhi.getTopYear().equals("top52") || kanzhi.getTopMonth().equals("top52") || kanzhi.getTopHour().equals("top52") || kanzhi.getBottomYear().equals("bottom52") || kanzhi.getBottomMonth().equals("bottom52") || kanzhi.getBottomHour().equals("bottom52")) {
+            if (kanzhi.getTopMonth().equals("top51")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top51")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom51")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom51")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom51")) {
+                kanzhi.setGjCnt(kanzhi.getGjCnt() + 1);
+            }
+
+
+            //
+            if (kanzhi.getTopYear().equals("top52")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getTopMonth().equals("top52")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getTopHour().equals("top52")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomYear().equals("bottom52")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomMonth().equals("bottom52")) {
+                kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
+            }
+            if (kanzhi.getBottomHour().equals("bottom52")) {
                 kanzhi.setBgCnt(kanzhi.getBgCnt() + 1);
             }
         }
+    }
+
+    public void kanzhiFleshPosition(KanzhiVO kanzhi) {
+
+        if (kanzhi.getTopDay().equals("top11")) {
+            if (kanzhi.getTopYear().equals("top11")) {
+                kanzhi.setTopYearFlesh("BG");
+            } else if(kanzhi.getTopYear().equals("top12")) {
+                kanzhi.setTopYearFlesh("GJ");
+            } else if(kanzhi.getTopYear().equals("top21")) {
+                kanzhi.setTopYearFlesh("SS");
+            } else if(kanzhi.getTopYear().equals("top22")) {
+                kanzhi.setTopYearFlesh("SG");
+            } else if(kanzhi.getTopYear().equals("top31")) {
+                kanzhi.setTopYearFlesh("PJ");
+            } else if(kanzhi.getTopYear().equals("top32")) {
+                kanzhi.setTopYearFlesh("JJ");
+            } else if(kanzhi.getTopYear().equals("top41")) {
+                kanzhi.setTopYearFlesh("PG");
+            } else if(kanzhi.getTopYear().equals("top32")) {
+                kanzhi.setTopYearFlesh("JG");
+            } else if(kanzhi.getTopYear().equals("top51")) {
+                kanzhi.setTopYearFlesh("PI");
+            } else if(kanzhi.getTopYear().equals("top52")) {
+                kanzhi.setTopYearFlesh("JI");
+            }
+
+            if (kanzhi.getTopMonth().equals("top11")) {
+                kanzhi.setTopMonthFlesh("BG");
+            } else if(kanzhi.getTopMonth().equals("top12")) {
+                kanzhi.setTopMonthFlesh("GJ");
+            } else if(kanzhi.getTopMonth().equals("top21")) {
+                kanzhi.setTopMonthFlesh("SS");
+            } else if(kanzhi.getTopMonth().equals("top22")) {
+                kanzhi.setTopMonthFlesh("SG");
+            } else if(kanzhi.getTopMonth().equals("top31")) {
+                kanzhi.setTopMonthFlesh("PJ");
+            } else if(kanzhi.getTopMonth().equals("top32")) {
+                kanzhi.setTopMonthFlesh("JJ");
+            } else if(kanzhi.getTopMonth().equals("top41")) {
+                kanzhi.setTopMonthFlesh("PG");
+            } else if(kanzhi.getTopMonth().equals("top32")) {
+                kanzhi.setTopMonthFlesh("JG");
+            } else if(kanzhi.getTopMonth().equals("top51")) {
+                kanzhi.setTopMonthFlesh("PI");
+            } else if(kanzhi.getTopMonth().equals("top52")) {
+                kanzhi.setTopMonthFlesh("JI");
+            }
+
+            if (kanzhi.getTopHour().equals("top11")) {
+                kanzhi.setTopYearFlesh("BG");
+            } else if(kanzhi.getTopHour().equals("top12")) {
+                kanzhi.setTopYearFlesh("GJ");
+            } else if(kanzhi.getTopHour().equals("top21")) {
+                kanzhi.setTopYearFlesh("SS");
+            } else if(kanzhi.getTopHour().equals("top22")) {
+                kanzhi.setTopYearFlesh("SG");
+            } else if(kanzhi.getTopHour().equals("top31")) {
+                kanzhi.setTopYearFlesh("PJ");
+            } else if(kanzhi.getTopHour().equals("top32")) {
+                kanzhi.setTopYearFlesh("JJ");
+            } else if(kanzhi.getTopHour().equals("top41")) {
+                kanzhi.setTopYearFlesh("PG");
+            } else if(kanzhi.getTopHour().equals("top32")) {
+                kanzhi.setTopYearFlesh("JG");
+            } else if(kanzhi.getTopHour().equals("top51")) {
+                kanzhi.setTopYearFlesh("PI");
+            } else if(kanzhi.getTopHour().equals("top52")) {
+                kanzhi.setTopYearFlesh("JI");
+            }
+
+            if (kanzhi.getBottomYear().equals("top11")) {
+                kanzhi.setBottomYearFlesh("BG");
+            } else if(kanzhi.getBottomYear().equals("top12")) {
+                kanzhi.setBottomYearFlesh("GJ");
+            } else if(kanzhi.getBottomYear().equals("top21")) {
+                kanzhi.setBottomYearFlesh("SS");
+            } else if(kanzhi.getBottomYear().equals("top22")) {
+                kanzhi.setBottomYearFlesh("SG");
+            } else if(kanzhi.getBottomYear().equals("top31")) {
+                kanzhi.setBottomYearFlesh("PJ");
+            } else if(kanzhi.getBottomYear().equals("top32")) {
+                kanzhi.setBottomYearFlesh("JJ");
+            } else if(kanzhi.getBottomYear().equals("top41")) {
+                kanzhi.setBottomYearFlesh("PG");
+            } else if(kanzhi.getBottomYear().equals("top32")) {
+                kanzhi.setBottomYearFlesh("JG");
+            } else if(kanzhi.getBottomYear().equals("top51")) {
+                kanzhi.setBottomYearFlesh("PI");
+            } else if(kanzhi.getBottomYear().equals("top52")) {
+                kanzhi.setBottomYearFlesh("JI");
+            }
+
+            if (kanzhi.getBottomDay().equals("top11")) {
+                kanzhi.setBottomDayFlesh("BG");
+            } else if(kanzhi.getBottomDay().equals("top12")) {
+                kanzhi.setBottomDayFlesh("GJ");
+            } else if(kanzhi.getBottomDay().equals("top21")) {
+                kanzhi.setBottomDayFlesh("SS");
+            } else if(kanzhi.getBottomDay().equals("top22")) {
+                kanzhi.setBottomDayFlesh("SG");
+            } else if(kanzhi.getBottomDay().equals("top31")) {
+                kanzhi.setBottomDayFlesh("PJ");
+            } else if(kanzhi.getBottomDay().equals("top32")) {
+                kanzhi.setBottomDayFlesh("JJ");
+            } else if(kanzhi.getBottomDay().equals("top41")) {
+                kanzhi.setBottomDayFlesh("PG");
+            } else if(kanzhi.getBottomDay().equals("top32")) {
+                kanzhi.setBottomDayFlesh("JG");
+            } else if(kanzhi.getBottomDay().equals("top51")) {
+                kanzhi.setBottomDayFlesh("PI");
+            } else if(kanzhi.getBottomDay().equals("top52")) {
+                kanzhi.setBottomDayFlesh("JI");
+            }
+
+            if (kanzhi.getBottomHour().equals("top11")) {
+                kanzhi.setBottomHourFlesh("BG");
+            } else if(kanzhi.getBottomHour().equals("top12")) {
+                kanzhi.setBottomHourFlesh("GJ");
+            } else if(kanzhi.getBottomHour().equals("top21")) {
+                kanzhi.setBottomHourFlesh("SS");
+            } else if(kanzhi.getBottomHour().equals("top22")) {
+                kanzhi.setBottomHourFlesh("SG");
+            } else if(kanzhi.getBottomHour().equals("top31")) {
+                kanzhi.setBottomHourFlesh("PJ");
+            } else if(kanzhi.getBottomHour().equals("top32")) {
+                kanzhi.setBottomHourFlesh("JJ");
+            } else if(kanzhi.getBottomHour().equals("top41")) {
+                kanzhi.setBottomHourFlesh("PG");
+            } else if(kanzhi.getBottomHour().equals("top32")) {
+                kanzhi.setBottomHourFlesh("JG");
+            } else if(kanzhi.getBottomHour().equals("top51")) {
+                kanzhi.setBottomHourFlesh("PI");
+            } else if(kanzhi.getBottomHour().equals("top52")) {
+                kanzhi.setBottomHourFlesh("JI");
+            }
+        } else if(kanzhi.getTopDay().equals("top12")) {
+
+        } else if(kanzhi.getTopDay().equals("top21")) {
+
+        } else if(kanzhi.getTopDay().equals("top22")) {
+
+        } else if(kanzhi.getTopDay().equals("top31")) {
+
+        } else if(kanzhi.getTopDay().equals("top32")) {
+
+        } else if(kanzhi.getTopDay().equals("top41")) {
+
+        } else if(kanzhi.getTopDay().equals("top42")) {
+
+        } else if(kanzhi.getTopDay().equals("top51")) {
+
+        } else if(kanzhi.getTopDay().equals("top52")) {
+
+        }
+
     }
 }
