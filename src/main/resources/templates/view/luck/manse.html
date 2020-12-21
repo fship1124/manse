@@ -159,7 +159,7 @@
     </table>
 
     <div>
-        <table>
+        <table style="margin: 0 auto;">
             <tr>
                 <th>時</th><th>日</th><th>月</th><th>年</th>
             </tr>
@@ -190,24 +190,34 @@
     <input type="hidden" id="bottomHour">
 
 
-
-
 <script>
 
-$.ajax({
-    url: "",
-    type: "",
-    dataType: "json",
-    data: "",
-    success: function(data){
+function getTongbuen() {
+    var param = {
+        topYear : $('#topYear').val(),
+        topMonth : $('#topMonth').val(),
+        topDay : $('#topDay').val(),
+        topHour : $('#topHour').val(),
+        bottomYear : $('#bottomYear').val(),
+        bottomMonth : $('#bottomMonth').val(),
+        bottomDay : $('#bottomDay').val(),
+        bottomHour : $('#bottomHour').val()
+    };
 
-    },
-    error: function (request, status, error){
-
-    }
-});
-
-
+    $.ajax({
+        url: "/unse/",
+        type: "GET",
+        dataType: "json",
+        data: param,
+        success: function(data){
+            console.log("success");
+            console.dir(data);
+        },
+        error: function (request, status, error){
+            alert("error");
+        }
+    });
+}
 
 </script>
 </div>

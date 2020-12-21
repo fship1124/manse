@@ -82,7 +82,6 @@ function showMyungsig(millHours, millMinutes) {
     baseTimeKanzhi = 9;
     shiKanzhi = allKanzhi[parseInt(((tKNum % 5) * 12 + ((hours+1) / 2)) % 60, 10) ];
 
-
     $('[name=topYear]').text(kanzhi.substr(0, 1));
     $('[name=bottomYear]').text(kanzhi.substr(1, 1));
     $('[name=topMonth]').text(allKanzhi[monthKanzhiNum].substr(0, 1));
@@ -100,6 +99,8 @@ function showMyungsig(millHours, millMinutes) {
     $('#bottomDay').val(engKanzhi[todayKanzhiNum].split('_')[1]);
     $('#topHour').val(engKanzhi[parseInt(((tKNum % 5) * 12 + ((hours+1) / 2)) % 60, 10) ].split('_')[0]);
     $('#bottomHour').val(engKanzhi[parseInt(((tKNum % 5) * 12 + ((hours+1) / 2)) % 60, 10) ].split('_')[1]);
+
+    getTongbuen();
 
     $('#saju').empty();
     let html = '';
