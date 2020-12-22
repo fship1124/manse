@@ -1,6 +1,7 @@
 package com.tree.family.controller;
 
 import com.tree.family.model.KanzhiVO;
+import com.tree.family.service.JapyengService;
 import com.tree.family.service.KanzhiService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +21,8 @@ public class UnseController {
 
     @Autowired
     KanzhiService kanzhiService;
+    @Autowired
+    JapyengService japyengService;
 
     @GetMapping("/")
     public Object index(HttpServletRequest request, KanzhiVO kanzhi) {
@@ -35,13 +38,15 @@ public class UnseController {
 
         // 육신 카운트
         kanzhiService.kanzhiCount(kanzhi);
-        logger.info("육신 카운트 완료");
+        // 명조 위치별 육신 정의
+        kanzhiService.kanzhiFleshPosition(kanzhi);
 
+        // 자평진전 격국
+        Map<String, String> jMap = japyengService.defineGuyck(kanzhi);
 
-
-        Map map = new HashMap();
+        Map<String, Object> map = new HashMap<>();
         map.put("kanzhi", kanzhi);
-        map.put("japyeng", "자평진전 이론");
+        map.put("japyeng", "고서에 이르기를... : 자평진전 이론");
 
         return map;
     }

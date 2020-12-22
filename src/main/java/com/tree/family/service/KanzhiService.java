@@ -2319,90 +2319,112 @@ public class KanzhiService {
             }
 
             if (kanzhi.getTopHour().equals("top11")) {
-                kanzhi.setTopYearFlesh("BG");
+                kanzhi.setTopHourFlesh("BG");
             } else if(kanzhi.getTopHour().equals("top12")) {
-                kanzhi.setTopYearFlesh("GJ");
+                kanzhi.setTopHourFlesh("GJ");
             } else if(kanzhi.getTopHour().equals("top21")) {
-                kanzhi.setTopYearFlesh("SS");
+                kanzhi.setTopHourFlesh("SS");
             } else if(kanzhi.getTopHour().equals("top22")) {
-                kanzhi.setTopYearFlesh("SG");
+                kanzhi.setTopHourFlesh("SG");
             } else if(kanzhi.getTopHour().equals("top31")) {
-                kanzhi.setTopYearFlesh("PJ");
+                kanzhi.setTopHourFlesh("PJ");
             } else if(kanzhi.getTopHour().equals("top32")) {
-                kanzhi.setTopYearFlesh("JJ");
+                kanzhi.setTopHourFlesh("JJ");
             } else if(kanzhi.getTopHour().equals("top41")) {
-                kanzhi.setTopYearFlesh("PG");
+                kanzhi.setTopHourFlesh("PG");
             } else if(kanzhi.getTopHour().equals("top32")) {
-                kanzhi.setTopYearFlesh("JG");
+                kanzhi.setTopHourFlesh("JG");
             } else if(kanzhi.getTopHour().equals("top51")) {
-                kanzhi.setTopYearFlesh("PI");
+                kanzhi.setTopHourFlesh("PI");
             } else if(kanzhi.getTopHour().equals("top52")) {
-                kanzhi.setTopYearFlesh("JI");
+                kanzhi.setTopHourFlesh("JI");
             }
 
-            if (kanzhi.getBottomYear().equals("top11")) {
+            if (kanzhi.getBottomYear().equals("bottom11")) {
                 kanzhi.setBottomYearFlesh("BG");
-            } else if(kanzhi.getBottomYear().equals("top12")) {
+            } else if(kanzhi.getBottomYear().equals("bottom12")) {
                 kanzhi.setBottomYearFlesh("GJ");
-            } else if(kanzhi.getBottomYear().equals("top21")) {
+            } else if(kanzhi.getBottomYear().equals("bottom21")) {
                 kanzhi.setBottomYearFlesh("SS");
-            } else if(kanzhi.getBottomYear().equals("top22")) {
+            } else if(kanzhi.getBottomYear().equals("bottom22")) {
                 kanzhi.setBottomYearFlesh("SG");
-            } else if(kanzhi.getBottomYear().equals("top31")) {
+            } else if(kanzhi.getBottomYear().equals("bottom31") || kanzhi.getBottomYear().equals("bottom33")) {
                 kanzhi.setBottomYearFlesh("PJ");
-            } else if(kanzhi.getBottomYear().equals("top32")) {
+            } else if(kanzhi.getBottomYear().equals("bottom32") || kanzhi.getBottomYear().equals("bottom34")) {
                 kanzhi.setBottomYearFlesh("JJ");
-            } else if(kanzhi.getBottomYear().equals("top41")) {
+            } else if(kanzhi.getBottomYear().equals("bottom41")) {
                 kanzhi.setBottomYearFlesh("PG");
-            } else if(kanzhi.getBottomYear().equals("top32")) {
+            } else if(kanzhi.getBottomYear().equals("bottom42")) {
                 kanzhi.setBottomYearFlesh("JG");
-            } else if(kanzhi.getBottomYear().equals("top51")) {
+            } else if(kanzhi.getBottomYear().equals("bottom51")) {
                 kanzhi.setBottomYearFlesh("PI");
-            } else if(kanzhi.getBottomYear().equals("top52")) {
+            } else if(kanzhi.getBottomYear().equals("bottom52")) {
                 kanzhi.setBottomYearFlesh("JI");
             }
 
-            if (kanzhi.getBottomDay().equals("top11")) {
+            if (kanzhi.getBottomMonth().equals("bottom11")) {
+                kanzhi.setBottomMonthFlesh("BG");
+            } else if(kanzhi.getBottomMonth().equals("bottom12")) {
+                kanzhi.setBottomMonthFlesh("GJ");
+            } else if(kanzhi.getBottomMonth().equals("bottom21")) {
+                kanzhi.setBottomMonthFlesh("SS");
+            } else if(kanzhi.getBottomMonth().equals("bottom22")) {
+                kanzhi.setBottomMonthFlesh("SG");
+            } else if(kanzhi.getBottomMonth().equals("bottom31") || kanzhi.getBottomMonth().equals("bottom33")) {
+                kanzhi.setBottomMonthFlesh("PJ");
+            } else if(kanzhi.getBottomMonth().equals("bottom32") || kanzhi.getBottomMonth().equals("bottom34")) {
+                kanzhi.setBottomMonthFlesh("JJ");
+            } else if(kanzhi.getBottomMonth().equals("bottom41")) {
+                kanzhi.setBottomMonthFlesh("PG");
+            } else if(kanzhi.getBottomMonth().equals("bottom42")) {
+                kanzhi.setBottomMonthFlesh("JG");
+            } else if(kanzhi.getBottomMonth().equals("bottom51")) {
+                kanzhi.setBottomMonthFlesh("PI");
+            } else if(kanzhi.getBottomMonth().equals("bottom52")) {
+                kanzhi.setBottomMonthFlesh("JI");
+            }
+
+            if (kanzhi.getBottomDay().equals("bottom11")) {
                 kanzhi.setBottomDayFlesh("BG");
-            } else if(kanzhi.getBottomDay().equals("top12")) {
+            } else if(kanzhi.getBottomDay().equals("bottom12")) {
                 kanzhi.setBottomDayFlesh("GJ");
-            } else if(kanzhi.getBottomDay().equals("top21")) {
+            } else if(kanzhi.getBottomDay().equals("bottom21")) {
                 kanzhi.setBottomDayFlesh("SS");
-            } else if(kanzhi.getBottomDay().equals("top22")) {
+            } else if(kanzhi.getBottomDay().equals("bottom22")) {
                 kanzhi.setBottomDayFlesh("SG");
-            } else if(kanzhi.getBottomDay().equals("top31")) {
+            } else if(kanzhi.getBottomDay().equals("bottom31") || kanzhi.getBottomDay().equals("bottom33")) {
                 kanzhi.setBottomDayFlesh("PJ");
-            } else if(kanzhi.getBottomDay().equals("top32")) {
+            } else if(kanzhi.getBottomDay().equals("bottom32") || kanzhi.getBottomDay().equals("bottom34")) {
                 kanzhi.setBottomDayFlesh("JJ");
-            } else if(kanzhi.getBottomDay().equals("top41")) {
+            } else if(kanzhi.getBottomDay().equals("bottom41")) {
                 kanzhi.setBottomDayFlesh("PG");
-            } else if(kanzhi.getBottomDay().equals("top32")) {
+            } else if(kanzhi.getBottomDay().equals("bottom42")) {
                 kanzhi.setBottomDayFlesh("JG");
-            } else if(kanzhi.getBottomDay().equals("top51")) {
+            } else if(kanzhi.getBottomDay().equals("bottom51")) {
                 kanzhi.setBottomDayFlesh("PI");
-            } else if(kanzhi.getBottomDay().equals("top52")) {
+            } else if(kanzhi.getBottomDay().equals("bottom52")) {
                 kanzhi.setBottomDayFlesh("JI");
             }
 
-            if (kanzhi.getBottomHour().equals("top11")) {
+            if (kanzhi.getBottomHour().equals("bottom11")) {
                 kanzhi.setBottomHourFlesh("BG");
-            } else if(kanzhi.getBottomHour().equals("top12")) {
+            } else if(kanzhi.getBottomHour().equals("bottom12")) {
                 kanzhi.setBottomHourFlesh("GJ");
-            } else if(kanzhi.getBottomHour().equals("top21")) {
+            } else if(kanzhi.getBottomHour().equals("bottom21")) {
                 kanzhi.setBottomHourFlesh("SS");
-            } else if(kanzhi.getBottomHour().equals("top22")) {
+            } else if(kanzhi.getBottomHour().equals("bottom22")) {
                 kanzhi.setBottomHourFlesh("SG");
-            } else if(kanzhi.getBottomHour().equals("top31")) {
+            } else if(kanzhi.getBottomHour().equals("bottom31") || kanzhi.getBottomHour().equals("bottom33")) {
                 kanzhi.setBottomHourFlesh("PJ");
-            } else if(kanzhi.getBottomHour().equals("top32")) {
+            } else if(kanzhi.getBottomHour().equals("bottom32") || kanzhi.getBottomHour().equals("bottom34")) {
                 kanzhi.setBottomHourFlesh("JJ");
-            } else if(kanzhi.getBottomHour().equals("top41")) {
+            } else if(kanzhi.getBottomHour().equals("bottom41")) {
                 kanzhi.setBottomHourFlesh("PG");
-            } else if(kanzhi.getBottomHour().equals("top32")) {
+            } else if(kanzhi.getBottomHour().equals("bottom42")) {
                 kanzhi.setBottomHourFlesh("JG");
-            } else if(kanzhi.getBottomHour().equals("top51")) {
+            } else if(kanzhi.getBottomHour().equals("bottom51")) {
                 kanzhi.setBottomHourFlesh("PI");
-            } else if(kanzhi.getBottomHour().equals("top52")) {
+            } else if(kanzhi.getBottomHour().equals("bottom52")) {
                 kanzhi.setBottomHourFlesh("JI");
             }
         } else if(kanzhi.getTopDay().equals("top12")) {

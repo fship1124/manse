@@ -1,6 +1,8 @@
 package com.tree.family.model;
 
 public class KanzhiVO {
+    private String sex;
+
     private String topYear;         // 년간
     private String topMonth;        // 월간
     private String topDay;          // 일간
@@ -76,6 +78,10 @@ public class KanzhiVO {
     private int pgCnt = 0;  // 편관 개수
     private int jiCnt = 0;  // 정인 개수
     private int piCnt = 0;  // 편인 개수
+
+    public String getSex() { return sex; }
+
+    public void setSex(String sex) { this.sex = sex; }
 
     public String getTopYear() {
         return topYear;

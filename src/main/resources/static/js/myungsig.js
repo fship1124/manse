@@ -9,14 +9,7 @@ engKanzhi = [
     'top11_bottom11', 'top12_bottom12', 'top21_bottom31', 'top22_bottom21', 'top31_bottom22', 'top32_bottom32', 'top41_bottom41', 'top42_bottom42', 'top51_bottom33', 'top52_bottom51'
 ]
 
-
-
-
 function startMyungsig (birthday, time) {
-    console.log("startMyungsig");
-    console.log(birthday);
-    console.log(time);
-
     stopClock();
     
     // 1984-04-28
