@@ -204,7 +204,7 @@ function showMyungsig(millHours, millMinutes) {
 
     $('#daeun').empty();
     html = '';
-    html += '<TABLE HEIGHT=80 CELLPADDING=3 border=1>';
+    html += '<TABLE id=daeun_tbl HEIGHT=80 CELLPADDING=3 border=1>';
     html += '<TR>';
     for (let i = 10; i > 0; i--) {
         html += '<TD>';

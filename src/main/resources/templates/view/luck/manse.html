@@ -5,21 +5,18 @@
       layout:decorator="layouts/layout_luck">
 <body onload="input_start()">
 <div layout:fragment="wrap" id="wrap">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <h2 align=center><font size="2" color="#0000FF"> 음력과 양력을 서로 바꾸기(1900-2105)</font></h2>
+<style>
+    #daeun_tbl {
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
 
-    <table align=center bgcolor=#000000>
+</style>
+
+    <table align=center>
         <form name="frm_nal">
             <tr>
-                <td bgcolor="#C0C0C0">
+                <td>
                     <input type=radio name="rad_gubun" value="um">음력
                     <input type=radio name="rad_gubun" value="yang">양력
                     <br>
@@ -145,9 +142,9 @@
                         <option value="59">59분</option>
                     </select>
 
-                <td width=33 bgcolor="#C0C0C0"></td>
-                <td bgcolor="#C0C0C0">
-                    <input type=button value="양력 <=> 음력" onclick="daydeal_click()">
+                <td width=33></td>
+                <td>
+                    <input type=button value="변환" onclick="daydeal_click()">
                     <br>
                     <br>
                     양력<input type=text size=17 name="txt_yang"><br>

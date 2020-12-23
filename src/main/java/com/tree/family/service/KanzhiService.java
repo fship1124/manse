@@ -2288,7 +2288,7 @@ public class KanzhiService {
                 kanzhi.setTopYearFlesh("JJ");
             } else if(kanzhi.getTopYear().equals("top41")) {
                 kanzhi.setTopYearFlesh("PG");
-            } else if(kanzhi.getTopYear().equals("top32")) {
+            } else if(kanzhi.getTopYear().equals("top42")) {
                 kanzhi.setTopYearFlesh("JG");
             } else if(kanzhi.getTopYear().equals("top51")) {
                 kanzhi.setTopYearFlesh("PI");
@@ -2306,7 +2306,7 @@ public class KanzhiService {
                 kanzhi.setTopMonthFlesh("SG");
             } else if(kanzhi.getTopMonth().equals("top31")) {
                 kanzhi.setTopMonthFlesh("PJ");
-            } else if(kanzhi.getTopMonth().equals("top32")) {
+            } else if(kanzhi.getTopMonth().equals("top42")) {
                 kanzhi.setTopMonthFlesh("JJ");
             } else if(kanzhi.getTopMonth().equals("top41")) {
                 kanzhi.setTopMonthFlesh("PG");
@@ -2332,7 +2332,7 @@ public class KanzhiService {
                 kanzhi.setTopHourFlesh("JJ");
             } else if(kanzhi.getTopHour().equals("top41")) {
                 kanzhi.setTopHourFlesh("PG");
-            } else if(kanzhi.getTopHour().equals("top32")) {
+            } else if(kanzhi.getTopHour().equals("top42")) {
                 kanzhi.setTopHourFlesh("JG");
             } else if(kanzhi.getTopHour().equals("top51")) {
                 kanzhi.setTopHourFlesh("PI");

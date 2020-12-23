@@ -42,11 +42,21 @@ public class UnseController {
         kanzhiService.kanzhiFleshPosition(kanzhi);
 
         // 자평진전 격국
-        Map<String, String> jMap = japyengService.defineGuyck(kanzhi);
+        Map<String, String> japyengMap = japyengService.defineGuyck(kanzhi);
+
+        // 적천수
+
+        // 난강망 궁통보감
+
+
+        // 더큼학당 창광 격국
+
+        // 이타 난강망
 
         Map<String, Object> map = new HashMap<>();
         map.put("kanzhi", kanzhi);
-        map.put("japyeng", "고서에 이르기를... : 자평진전 이론");
+        map.put("japyeng_theory", japyengMap.get("japyeng_theory"));
+        map.put("japyeng_explain", japyengMap.get("japyeng_explain"));
 
         return map;
     }

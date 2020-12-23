@@ -53,22 +53,60 @@ public class JapyengService {
     }
 
     // 건록격
-    private Map<String, String> guyckBG(KanzhiVO kanzhiVO) {
+    private Map<String, String> guyckBG(KanzhiVO kanzhi) {
+        Map<String, String> rtnMap = new HashMap<>();
+        String theory = null;   // 이론
+        String explain = null;  // 풀이
 
-        // 성격
+
+        /**
+         * 성격
+         * 성격 1) : 관성이 투출하고 재와 인수가 있는 것
+         * 성격 2) : 재가 투출하고 식상이 있는 것
+         * 성격 3) : 식상이 투출하고 제복 된 것
+         */
+        /**
+         * 파격
+         * 파격 1) : 재관이 사주에 없는 것
+         * 파격 2) : 칠살 투출한 것
+         * 파격 3) : 인수가 투출한 것
+         * 파격 etc)
+        */
+
         // 성격 1) : 관성이 투출하고 재와 인수가 있는 것
-        // 성격 2) : 재가 투출하고 식상이 있는 것
-        // 성격 3) : 식상이 투출하고 제복 된 것
+        // 정관 투출
+        if (kanzhi.getTopMonthFlesh().equals("JG") || kanzhi.getTopYearFlesh().equals("JG") || kanzhi.getTopHourFlesh().equals("JG")) {
+            boolean flagPJorJJ = false;
+            boolean flagJI = false;
 
-        // 파격
-        // 파격 1) : 재관이 사주에 없는 것
-        // 파격 2) : 칠살이나 인수가 투출한 것
-        // 파격 etc)
+            // 재가 있는 것
+            if (kanzhi.getTopMonthFlesh().equals("PJ") || kanzhi.getTopYearFlesh().equals("PJ") || kanzhi.getTopHourFlesh().equals("PJ")
+                    || kanzhi.getBottomYearFlesh().equals("PJ") || kanzhi.getBottomDayFlesh().equals("PJ") || kanzhi.getBottomHourFlesh().equals("PJ")
+                || kanzhi.getTopMonthFlesh().equals("JJ") || kanzhi.getTopYearFlesh().equals("JJ") || kanzhi.getTopHourFlesh().equals("JJ")
+                    || kanzhi.getBottomYearFlesh().equals("JJ") || kanzhi.getBottomDayFlesh().equals("JJ") || kanzhi.getBottomHourFlesh().equals("JJ")
+            )
+            {
+                flagPJorJJ = true;
+            }
+            // 인수(정인)가 있는 것
+            if (kanzhi.getTopMonthFlesh().equals("JI") || kanzhi.getTopYearFlesh().equals("JI") || kanzhi.getTopHourFlesh().equals("JI")
+                    || kanzhi.getBottomYearFlesh().equals("JI") || kanzhi.getBottomDayFlesh().equals("JI") || kanzhi.getBottomHourFlesh().equals("JI")
+            )
+            {
+                flagJI = true;
+            }
+
+            if (flagPJorJJ && flagJI) {
+                theory = "자평진전 이론 : 관성이 투출하고 재와 인수가 있는 것";
+                explain = "자평진전 풀이 : 성격";
+            }
+
+            rtnMap.put("japyeng_theory", theory);
+            rtnMap.put("japyeng_explain", explain);
+            return rtnMap;
+        }
 
 
-
-        return null;
+        return rtnMap;
     }
-
-
 }
