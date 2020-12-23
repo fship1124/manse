@@ -100,12 +100,26 @@ public class JapyengService {
                 theory = "자평진전 이론 : 관성이 투출하고 재와 인수가 있는 것";
                 explain = "자평진전 풀이 : 성격";
             }
-
-            rtnMap.put("japyeng_theory", theory);
-            rtnMap.put("japyeng_explain", explain);
-            return rtnMap;
         }
 
+        // 성격 2) : 재가 투출하고 식상이 있는 것
+        // 재가 투출 한 것
+        if (kanzhi.getTopMonthFlesh().equals("PJ") || kanzhi.getTopYearFlesh().equals("PJ") || kanzhi.getTopHourFlesh().equals("PJ")
+            || kanzhi.getTopMonthFlesh().equals("JJ") || kanzhi.getTopYearFlesh().equals("JJ") || kanzhi.getTopHourFlesh().equals("JJ")
+        ) {
+            // 식상이 있는 것
+            if (kanzhi.getTopMonthFlesh().equals("SS") || kanzhi.getTopYearFlesh().equals("SS") || kanzhi.getTopHourFlesh().equals("SS")
+                    || kanzhi.getBottomYearFlesh().equals("SS") || kanzhi.getBottomDayFlesh().equals("SS") || kanzhi.getBottomHourFlesh().equals("SS")
+                    || kanzhi.getTopMonthFlesh().equals("SG") || kanzhi.getTopYearFlesh().equals("SG") || kanzhi.getTopHourFlesh().equals("SG")
+                    || kanzhi.getBottomYearFlesh().equals("SG") || kanzhi.getBottomDayFlesh().equals("SG") || kanzhi.getBottomHourFlesh().equals("SG")
+            ) {
+                theory = "자평진전 이론 : 재가 투출하고 식상이 있는 것";
+                explain = "자평진전 풀이 : 성격";
+            }
+        }
+
+        rtnMap.put("japyeng_theory", theory);
+        rtnMap.put("japyeng_explain", explain);
 
         return rtnMap;
     }
