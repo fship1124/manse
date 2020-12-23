@@ -96,6 +96,10 @@ public class JapyengService {
             if (flagPJorJJ && flagJI) {
                 theory = "자평진전 이론 : 관성이 투출하고 재와 인수가 있는 것";
                 explain = "자평진전 풀이 : 성격";
+
+                rtnMap.put("japyeng_theory", theory);
+                rtnMap.put("japyeng_explain", explain);
+                return rtnMap;
             }
         }
 
@@ -112,19 +116,63 @@ public class JapyengService {
             ) {
                 theory = "자평진전 이론 : 재가 투출하고 식상이 있는 것";
                 explain = "자평진전 풀이 : 성격";
+
+                rtnMap.put("japyeng_theory", theory);
+                rtnMap.put("japyeng_explain", explain);
+                return rtnMap;
             }
         }
 
         // 성격 3) : 칠살이 투출하고 제복 된 것
+        if (kanzhi.getTopMonthFlesh().equals("PG") || kanzhi.getTopYearFlesh().equals("PG") || kanzhi.getTopHourFlesh().equals("PG")
+        ) {
+            // 식상이 있는 것
+            if (kanzhi.getTopMonthFlesh().equals("SS") || kanzhi.getTopYearFlesh().equals("SS") || kanzhi.getTopHourFlesh().equals("SS")
+                    || kanzhi.getBottomYearFlesh().equals("SS") || kanzhi.getBottomDayFlesh().equals("SS") || kanzhi.getBottomHourFlesh().equals("SS")
+                    || kanzhi.getTopMonthFlesh().equals("SG") || kanzhi.getTopYearFlesh().equals("SG") || kanzhi.getTopHourFlesh().equals("SG")
+                    || kanzhi.getBottomYearFlesh().equals("SG") || kanzhi.getBottomDayFlesh().equals("SG") || kanzhi.getBottomHourFlesh().equals("SG")
+            ) {
+                theory = "자평진전 이론 : 칠살이 투출하고 제복 된 것";
+                explain = "자평진전 풀이 : 성격";
 
+                rtnMap.put("japyeng_theory", theory);
+                rtnMap.put("japyeng_explain", explain);
+                return rtnMap;
+            }
+        }
 
+        // 파격 1) : 재관이 사주에 없는 것
+        if (!kanzhi.getTopMonthFlesh().equals("JG") && !kanzhi.getTopYearFlesh().equals("JG") && !kanzhi.getTopHourFlesh().equals("JG")
+            || !kanzhi.getBottomYearFlesh().equals("JG") && !kanzhi.getBottomDayFlesh().equals("JG") && !kanzhi.getBottomHourFlesh().equals("JG")
+            || !kanzhi.getTopMonthFlesh().equals("PG") && !kanzhi.getTopYearFlesh().equals("PG") && !kanzhi.getTopHourFlesh().equals("PG")
+            || !kanzhi.getBottomYearFlesh().equals("PG") && !kanzhi.getBottomDayFlesh().equals("PG") && !kanzhi.getBottomHourFlesh().equals("PG")
+        )
+        {
+            if (!kanzhi.getTopMonthFlesh().equals("JJ") && !kanzhi.getTopYearFlesh().equals("JJ") && !kanzhi.getTopHourFlesh().equals("JJ")
+                    || !kanzhi.getBottomYearFlesh().equals("JJ") && !kanzhi.getBottomDayFlesh().equals("JJ") && !kanzhi.getBottomHourFlesh().equals("JJ")
+                    || !kanzhi.getTopMonthFlesh().equals("PJ") && !kanzhi.getTopYearFlesh().equals("PJ") && !kanzhi.getTopHourFlesh().equals("PJ")
+                    || !kanzhi.getBottomYearFlesh().equals("PJ") && !kanzhi.getBottomDayFlesh().equals("PJ") && !kanzhi.getBottomHourFlesh().equals("PJ")
+            ) {
+                theory = "자평진전 이론 : 재관이 사주에 없는 것";
+                explain = "자평진전 풀이 : 파격";
 
+                rtnMap.put("japyeng_theory", theory);
+                rtnMap.put("japyeng_explain", explain);
+                return rtnMap;
+            }
+        }
 
+        // 파격 2) : 칠살 투출한 것
+        if (kanzhi.getTopMonthFlesh().equals("PG") || kanzhi.getTopYearFlesh().equals("PG") || kanzhi.getTopHourFlesh().equals("PG"))
+        {
+            theory = "자평진전 이론 : 칠살 투출하고 제복되지 않은 것";
+            explain = "자평진전 풀이 : 파격";
 
+            rtnMap.put("japyeng_theory", theory);
+            rtnMap.put("japyeng_explain", explain);
+            return rtnMap;
+        }
 
-
-        rtnMap.put("japyeng_theory", theory);
-        rtnMap.put("japyeng_explain", explain);
 
         return rtnMap;
     }
