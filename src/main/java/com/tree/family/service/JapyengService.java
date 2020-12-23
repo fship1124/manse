@@ -10,13 +10,13 @@ import java.util.Map;
 public class JapyengService {
 
     public Map<String, String> defineGuyck(KanzhiVO kanzhi) {
-
+        Map<String, String> rtnMap = new HashMap<>();
         String monthZhi = kanzhi.getBottomMonthFlesh();
         System.out.println(monthZhi);
 
         // 건록격
         if (monthZhi.equals("BG")) {
-            guyckBG(kanzhi);
+            rtnMap = guyckBG(kanzhi);
 
         // 겁재격
         } else if (monthZhi.equals("GJ")) {
@@ -26,7 +26,7 @@ public class JapyengService {
 
             // 건록격과 동일
             } else {
-                guyckBG(kanzhi);
+                rtnMap = guyckBG(kanzhi);
             }
         } else if (monthZhi.equals("SS")) {
 
@@ -46,10 +46,7 @@ public class JapyengService {
 
         }
 
-
-        Map<String, String> map = new HashMap<>();
-
-        return map;
+        return rtnMap;
     }
 
     // 건록격
@@ -63,7 +60,7 @@ public class JapyengService {
          * 성격
          * 성격 1) : 관성이 투출하고 재와 인수가 있는 것
          * 성격 2) : 재가 투출하고 식상이 있는 것
-         * 성격 3) : 식상이 투출하고 제복 된 것
+         * 성격 3) : 칠살이 투출하고 제복 된 것
          */
         /**
          * 파격
@@ -117,6 +114,14 @@ public class JapyengService {
                 explain = "자평진전 풀이 : 성격";
             }
         }
+
+        // 성격 3) : 칠살이 투출하고 제복 된 것
+
+
+
+
+
+
 
         rtnMap.put("japyeng_theory", theory);
         rtnMap.put("japyeng_explain", explain);

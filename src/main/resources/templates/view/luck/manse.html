@@ -17,8 +17,8 @@
         <form name="frm_nal">
             <tr>
                 <td>
-                    <input type=radio name="rad_gubun" value="yang">양력
                     <input type=radio name="rad_gubun" value="um">음력(평달)
+                    <input type=radio name="rad_gubun" value="yang">양력
                     <input type=checkbox name="chk_yun">음력(윤달)<br>
                     <br>
                     <br>
@@ -175,8 +175,14 @@
             </tr>
         </table>
         <div id="daeun"></div>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/>
     </div>
+
+    <div>
+        <div id="japyeng_theory"></div>
+        <div id="japyeng_explain"></div>
+    </div>
+
 
     <input type="hidden" id="topYear">
     <input type="hidden" id="topMonth">
@@ -186,8 +192,6 @@
     <input type="hidden" id="bottomMonth">
     <input type="hidden" id="bottomDay">
     <input type="hidden" id="bottomHour">
-
-
 <script>
 
 function getTongbuen() {
@@ -210,6 +214,9 @@ function getTongbuen() {
         success: function(data){
             console.log("success");
             console.dir(data);
+
+            $("#japyeng_theory").html(data.japyeng_theory);
+            $("#japyeng_explain").html(data.japyeng_explain);
         },
         error: function (request, status, error){
             alert("error");
