@@ -55,8 +55,8 @@ public class UnseController {
 
         Map<String, Object> map = new HashMap<>();
         map.put("kanzhi", kanzhi);
-        map.put("japyeng_theory", japyengMap.get("japyeng_theory"));
-        map.put("japyeng_explain", japyengMap.get("japyeng_explain"));
+        map.put("japyeng_theory", "자평진전 이론 : " + japyengMap.get("japyeng_theory"));
+        map.put("japyeng_explain", "자평진전 풀이 : " + japyengMap.get("japyeng_explain"));
 
         return map;
     }

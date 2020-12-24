@@ -6,158 +6,135 @@
 <body onload="input_start()">
 <div layout:fragment="wrap" id="wrap">
 <style>
+    body {
+        font-size: 10px;
+    }
     #daeun_tbl {
         margin: 0 auto;
         border-collapse: collapse;
         width: 250px;
     }
-
+    div.left {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+    input[type=text] {
+        width: 100px;
+    }
 </style>
-
-    <table align=center>
+    <div class="left">
         <form name="frm_nal">
-            <tr>
-                <td>
-                    <input type=radio name="rad_gubun" value="um">음력(평달)
-                    <input type=radio name="rad_gubun" value="yang">양력
-                    <input type=checkbox name="chk_yun">음력(윤달)<br>
-                    <br>
-                    <br>
-                    <select name="sel_year">
-                        <option value=0>190<option value=1>191<option value=2>192<option value=3>193
-                        <option value=4>194<option value=5>195<option value=6>196<option value=7>197
-                        <option value=8>198<option value=9>199<option value=10>200<option value=11>201
-                        <option value=12>202<option value=13>203
-                        <option value=14>204<option value=15>205<option value=16>206<option value=17>207
-                        <option value=18>208<option value=19>209<option value=20>210
-                    </select>
-                    <select name="sel_syear">
-                        <option value=0>0<option value=1>1<option value=2>2<option value=3>3
-                        <option value=4>4<option value=5>5<option value=6>6<option value=7>7
-                        <option value=8>8<option value=9>9
-                    </select>년
-                    <br>
-                    <select name="sel_month">
-                        <option value=1>1<option value=2>2<option value=3>3<option value=4>4
-                        <option value=5>5<option value=6>6<option value=7>7<option value=8>8
-                        <option value=9>9<option value=10>10<option value=11>11<option value=12>
-                        12
-                    </select>월
+            <input type=radio name="rad_gubun" value="um">음력(평달)
+            <input type=radio name="rad_gubun" value="yang" checked>양력
+            <input type=checkbox name="chk_yun">음력(윤달)<br>
+            <select name="sel_year">
+                <option value=0>190<option value=1>191<option value=2>192<option value=3>193
+                <option value=4>194<option value=5>195<option value=6>196<option value=7>197
+                <option value=8>198<option value=9>199<option value=10>200<option value=11>201
+                <option value=12>202<option value=13>203
+                <option value=14>204<option value=15>205<option value=16>206<option value=17>207
+                <option value=18>208<option value=19>209<option value=20>210
+            </select>
+            <select name="sel_syear">
+                <option value=0>0<option value=1>1<option value=2>2<option value=3>3
+                <option value=4>4<option value=5>5<option value=6>6<option value=7>7
+                <option value=8>8<option value=9>9
+            </select>년
+            <select name="sel_month">
+                <option value=1>1<option value=2>2<option value=3>3<option value=4>4
+                <option value=5>5<option value=6>6<option value=7>7<option value=8>8
+                <option value=9>9<option value=10>10<option value=11>11<option value=12>
+                12
+            </select>월
 
-                    <select name="sel_day">
-                        <option value=1>1<option value=2>2<option value=3>3<option value=4>4
-                        <option value=5>5<option value=6>6<option value=7>7<option value=8>8
-                        <option value=9>9<option value=10>10<option value=11>11<option value=12>
-                        12
-                        <option value=13>13<option value=14>14<option value=15>15<option value=16>16
-                        <option value=17>17<option value=18>18<option value=19>19<option value=20>20
-                        <option value=21>21<option value=22>22<option value=23>23<option value=24>24
-                        <option value=25>25<option value=26>26<option value=27>27<option value=28>28
-                        <option value=29>29<option value=30>30<option value=31>31
-                    </select>일
-                    <select name="sel_hour">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                    </select>
-                    <select name="sel_min">
-                        <option value="0">0분</option>
-                        <option value="1">1분</option>
-                        <option value="2">2분</option>
-                        <option value="3">3분</option>
-                        <option value="4">4분</option>
-                        <option value="5">5분</option>
-                        <option value="6">6분</option>
-                        <option value="7">7분</option>
-                        <option value="8">8분</option>
-                        <option value="9">9분</option>
-                        <option value="10">10분</option>
-                        <option value="11">11분</option>
-                        <option value="12">12분</option>
-                        <option value="13">13분</option>
-                        <option value="14">14분</option>
-                        <option value="15">15분</option>
-                        <option value="16">16분</option>
-                        <option value="17">17분</option>
-                        <option value="18">18분</option>
-                        <option value="19">19분</option>
-                        <option value="20">20분</option>
-                        <option value="21">21분</option>
-                        <option value="22">22분</option>
-                        <option value="23">23분</option>
-                        <option value="24">24분</option>
-                        <option value="25">25분</option>
-                        <option value="26">26분</option>
-                        <option value="27">27분</option>
-                        <option value="28">28분</option>
-                        <option value="29">29분</option>
-                        <option value="30">30분</option>
-                        <option value="31">31분</option>
-                        <option value="32">32분</option>
-                        <option value="33">33분</option>
-                        <option value="34">34분</option>
-                        <option value="35">35분</option>
-                        <option value="36">36분</option>
-                        <option value="37">37분</option>
-                        <option value="38">38분</option>
-                        <option value="39">39분</option>
-                        <option value="40">40분</option>
-                        <option value="41">41분</option>
-                        <option value="42">42분</option>
-                        <option value="43">43분</option>
-                        <option value="44">44분</option>
-                        <option value="45">45분</option>
-                        <option value="46">46분</option>
-                        <option value="47">47분</option>
-                        <option value="48">48분</option>
-                        <option value="49">49분</option>
-                        <option value="50">50분</option>
-                        <option value="51">51분</option>
-                        <option value="52">52분</option>
-                        <option value="53">53분</option>
-                        <option value="54">54분</option>
-                        <option value="55">55분</option>
-                        <option value="56">56분</option>
-                        <option value="57">57분</option>
-                        <option value="58">58분</option>
-                        <option value="59">59분</option>
-                    </select>
-
-                <td width=33></td>
-                <td>
-                    <input type=button value="변환" onclick="daydeal_click()">
-                    <br>
-                    <br>
-                    양력<input type=text size=17 name="txt_yang"><br>
-                    음력<input type=text size=17 name="txt_um">
-                    <input type=hidden name="hid_yun">
-                </td>
-            </tr>
+            <select name="sel_day">
+                <option value=1>1<option value=2>2<option value=3>3<option value=4>4
+                <option value=5>5<option value=6>6<option value=7>7<option value=8>8
+                <option value=9>9<option value=10>10<option value=11>11<option value=12>12
+                <option value=13>13<option value=14>14<option value=15>15<option value=16>16
+                <option value=17>17<option value=18>18<option value=19>19<option value=20>20
+                <option value=21>21<option value=22>22<option value=23>23<option value=24>24
+                <option value=25>25<option value=26>26<option value=27>27<option value=28>28
+                <option value=29>29<option value=30>30<option value=31>31
+            </select>일
+            <select name="sel_hour">
+                <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                <option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option>
+                <option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option>
+                <option value="21">21</option><option value="22">22</option><option value="23">23</option>
+            </select>
+            <select name="sel_min">
+                <option value="0">0분</option>
+                <option value="1">1분</option>
+                <option value="2">2분</option>
+                <option value="3">3분</option>
+                <option value="4">4분</option>
+                <option value="5">5분</option>
+                <option value="6">6분</option>
+                <option value="7">7분</option>
+                <option value="8">8분</option>
+                <option value="9">9분</option>
+                <option value="10">10분</option>
+                <option value="11">11분</option>
+                <option value="12">12분</option>
+                <option value="13">13분</option>
+                <option value="14">14분</option>
+                <option value="15">15분</option>
+                <option value="16">16분</option>
+                <option value="17">17분</option>
+                <option value="18">18분</option>
+                <option value="19">19분</option>
+                <option value="20">20분</option>
+                <option value="21">21분</option>
+                <option value="22">22분</option>
+                <option value="23">23분</option>
+                <option value="24">24분</option>
+                <option value="25">25분</option>
+                <option value="26">26분</option>
+                <option value="27">27분</option>
+                <option value="28">28분</option>
+                <option value="29">29분</option>
+                <option value="30">30분</option>
+                <option value="31">31분</option>
+                <option value="32">32분</option>
+                <option value="33">33분</option>
+                <option value="34">34분</option>
+                <option value="35">35분</option>
+                <option value="36">36분</option>
+                <option value="37">37분</option>
+                <option value="38">38분</option>
+                <option value="39">39분</option>
+                <option value="40">40분</option>
+                <option value="41">41분</option>
+                <option value="42">42분</option>
+                <option value="43">43분</option>
+                <option value="44">44분</option>
+                <option value="45">45분</option>
+                <option value="46">46분</option>
+                <option value="47">47분</option>
+                <option value="48">48분</option>
+                <option value="49">49분</option>
+                <option value="50">50분</option>
+                <option value="51">51분</option>
+                <option value="52">52분</option>
+                <option value="53">53분</option>
+                <option value="54">54분</option>
+                <option value="55">55분</option>
+                <option value="56">56분</option>
+                <option value="57">57분</option>
+                <option value="58">58분</option>
+                <option value="59">59분</option>
+            </select>
+            <input type=button value="변환" onclick="daydeal_click()">
+            <br>
+            양력<input type=text size=17 name="txt_yang"><br>
+            음력<input type=text size=17 name="txt_um">
+            <input type=hidden name="hid_yun">
         </form>
-    </table>
-
-    <div>
+    </div>
+    <div class="left">
         <table style="margin: 0 auto;">
             <tr>
                 <th>時</th><th>日</th><th>月</th><th>年</th>
@@ -177,22 +154,36 @@
         </table>
         <div id="daeun"></div>
         <br/>
+        <table>
+            <thead>
+            <tr>
+                <th>時</th><th>日</th><th>月</th><th>年</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="text" id="topHour"></td>
+                <td><input type="text" id="topDay"></td>
+                <td><input type="text" id="topMonth"></td>
+                <td> <input type="text" id="topYear"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="bottomHour"></td>
+                <td><input type="text" id="bottomDay"></td>
+                <td><input type="text" id="bottomMonth"></td>
+                <td><input type="text" id="bottomYear"></td>
+            </tr>
+            </tbody>
+        </table>
+        <button type="button" onclick="getTongbuen()">전송</button>
     </div>
 
-    <div>
+    <div style="clear: both">
+        <h1>자평진전 격국 풀이</h1>
         <div id="japyeng_theory"></div>
+        <br>
         <div id="japyeng_explain"></div>
     </div>
-
-
-    <input type="hidden" id="topYear">
-    <input type="hidden" id="topMonth">
-    <input type="hidden" id="topDay">
-    <input type="hidden" id="topHour">
-    <input type="hidden" id="bottomYear">
-    <input type="hidden" id="bottomMonth">
-    <input type="hidden" id="bottomDay">
-    <input type="hidden" id="bottomHour">
 <script>
 
 function getTongbuen() {
