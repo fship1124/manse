@@ -250,7 +250,23 @@ public class JapyengService {
         }
 
         // 파격 2) : 양인이 왕성하고 식상이 있는 것
+        int bg_gj_cnt = kanzhi.getBgCnt() + kanzhi.getGjCnt();
+        if (bg_gj_cnt >= 2) {
+            if (kanzhi.getTopMonthFlesh().equals("SS") || kanzhi.getTopYearFlesh().equals("SS") || kanzhi.getTopHourFlesh().equals("SS")
+                    || kanzhi.getBottomYearFlesh().equals("SS") || kanzhi.getBottomDayFlesh().equals("SS") || kanzhi.getBottomHourFlesh().equals("SS")
+                    || kanzhi.getTopMonthFlesh().equals("SG") || kanzhi.getTopYearFlesh().equals("SG") || kanzhi.getTopHourFlesh().equals("SG")
+                    || kanzhi.getBottomYearFlesh().equals("SG") || kanzhi.getBottomDayFlesh().equals("SG") || kanzhi.getBottomHourFlesh().equals("SG")
+            ) {
+                theory = "양인이 왕성하고 식상이 있는 것";
+                theory += "<br> 양인이 왕성하면 식상을 용신으로 삼아 왕성한 양인의 기세를 설기해도 좋다.";
+                theory += "<br> 하지만 일단 관살을 용신으로 삼아 양인을 제압하는 경우에는 식신과 상관을 용신으로 삼지 못할 뿐만 아니라 식상이 사주에 없어야 비로소 양인격이 성격이 될 수 있다.";
+                explain = "파격";
 
+                rtnMap.put("japyeng_theory", theory);
+                rtnMap.put("japyeng_explain", explain);
+                return rtnMap;
+            }
+        }
 
         return rtnMap;
     }
