@@ -107,6 +107,7 @@
             timerRunning = false;
             timerID = null;
 
+            jullgi24 = [];
                     
         function stopClock() {
             if(timerRunning)
@@ -117,7 +118,6 @@
             // === get the memorial dates ===
         
         function getMemoDate() {       
-            debugger;
             // === set the memorial dates of every year ===
             md = new Array()
             md['0101'] = " / 新正"     // 서력설날
@@ -195,7 +195,23 @@
                 sosolDate      = sosol[yearNum1].charAt(yearNum2)
                 desolDate      = desol[yearNum1].charAt(yearNum2)
                 dongzhiDate    = dongzhi[yearNum1].charAt(yearNum2)
-        
+
+                jullgi24 = [
+                    sohanDate,
+                    ipchunDate,
+                    gyongchipDate,
+                    chongmyongDate,
+                    iphaDate,
+                    mangzongDate,
+                    sosoeDate,
+                    ipchuDate,
+                    begroDate,
+                    hanroDate,
+                    ipdongDate,
+                    desolDate
+                ]
+
+
                 md['010'+sohanDate]      = " / 小寒"
                 md['012'+dehanDate]      = " / 大寒"
                 md['020'+ipchunDate]     = " / 立春"
@@ -350,12 +366,36 @@
                 // 서기전 10017년, 9957년, 서기후 4년, 1984년이 갑자년. 
         
             kanzhiNum = ((60+thisYearKanzhi)>59) ? (parseInt((60+thisYearKanzhi)%60,10)) : (60+thisYearKanzhi)          
-            aniNum = ((12+thisYearAnimal)>11) ? (parseInt((12+thisYearAnimal)%12,10)) : (12+thisYearAnimal) 
+
+
+            // 절기 계산
+            getMemoDate();
+
+            monthKanzhi = 60 + parseInt(sumYearMonths % 60, 10)
+            // 기준년부터 당해년도의 당월까지 합산된 총 월수의 간지.
+
+            var numMillMonth = parseInt(millMonth);
+            if (parseInt(millDate) < (jullgi24[numMillMonth - 1])) {
+                monthKanzhi -= 1;
+            }
+            if (numMillMonth == 1) {
+                kanzhiNum -= 1;
+            } else if (numMillMonth == 2) {
+                if (parseInt(millDate) < (jullgi24[numMillMonth - 1])) {
+                    kanzhiNum -= 1;
+                }
+            }
+            debugger;
+
+            // end 절기 계산
+
+            // TODO 야자시 계산
+
+            // TODO 절입시각 계산
+            aniNum = ((12+thisYearAnimal)>11) ? (parseInt((12+thisYearAnimal)%12,10)) : (12+thisYearAnimal)
             kanzhi = allKanzhi[kanzhiNum]
             animalZhi = animal[aniNum]
-        
-            monthKanzhi = 60 + parseInt(sumYearMonths % 60, 10)
-                // 기준년부터 당해년도의 당월까지 합산된 총 월수의 간지. 
+
             monthKanzhiNum = ((baseMonthKanzhi+monthKanzhi)>59) ? (parseInt((baseMonthKanzhi+monthKanzhi)%60,10)) : (baseMonthKanzhi+monthKanzhi) 
                 // 당월 간지. 월수 기준 간지에 당월까지의 간지수 합산. 
             dateKanzhi = parseInt((sumYearDates + sumMonthDates + 1) % 60, 10) 
