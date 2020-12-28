@@ -22,7 +22,17 @@ public class Body {
         top42,
         top51,
         top52,
-        bottom11
-
+        bottom11,
+        bottom12,
+        bottom21,
+        bottom22,
+        bottom31,
+        bottom32,
+        bottom33,
+        bottom34,
+        bottom41,
+        bottom42,
+        bottom51,
+        bottom52
     }
 }
