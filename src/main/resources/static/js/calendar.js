@@ -385,8 +385,6 @@
                     kanzhiNum -= 1;
                 }
             }
-            debugger;
-
             // end 절기 계산
 
             // TODO 야자시 계산
