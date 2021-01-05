@@ -25,8 +25,8 @@
 </style>
     <div class="left">
         <form name="frm_nal">
-            <input type=radio name="rad_gubun" value="um">음력(평달)
             <input type=radio name="rad_gubun" value="yang" checked>양력
+            <input type=radio name="rad_gubun" value="um">음력(평달)
             <input type=checkbox name="chk_yun">음력(윤달)<br>
             <select name="sel_year">
                 <option value=0>190<option value=1>191<option value=2>192<option value=3>193
@@ -41,6 +41,7 @@
                 <option value=4>4<option value=5>5<option value=6>6<option value=7>7
                 <option value=8>8<option value=9>9
             </select>년
+
             <select name="sel_month">
                 <option value=1>1<option value=2>2<option value=3>3<option value=4>4
                 <option value=5>5<option value=6>6<option value=7>7<option value=8>8
@@ -180,9 +181,10 @@
 
     <div style="clear: both">
         <h1>자평진전 격국 풀이</h1>
-        <div id="japyeng_theory"></div>
-        <br>
+        <div id="japyeng_gyeog"></div>
         <div id="japyeng_explain"></div>
+        <br>
+        <div id="japyeng_theory"></div>
     </div>
 <script>
 
@@ -207,6 +209,7 @@ function getTongbuen() {
             console.log("success");
             console.dir(data);
 
+            $("#japyeng_gyeog").html(data.japyeng_gyeog);
             $("#japyeng_theory").html(data.japyeng_theory);
             $("#japyeng_explain").html(data.japyeng_explain);
         },
@@ -215,7 +218,6 @@ function getTongbuen() {
         }
     });
 }
-
 </script>
 </div>
 </body>

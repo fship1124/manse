@@ -1,7 +1,7 @@
 function daydeal_click() {
     document.frm_nal.hid_yun.value= "no"; //음력 윤달이 아닌 것으로 초기화.
 
-    if(document.frm_nal.rad_gubun[0].checked== true) //음력을 입력한 경우에
+    if(document.frm_nal.rad_gubun[1].checked== true) //음력을 입력한 경우에
     day_deal("um");
     else
     day_deal("yang");
