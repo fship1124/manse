@@ -2,6 +2,7 @@ package com.tree.family.model;
 
 public class KanzhiVO {
     private String sex;
+    private boolean isStrong;
 
     private String topYear;         // 년간
     private String topMonth;        // 월간
@@ -633,5 +634,13 @@ public class KanzhiVO {
 
     public void setPiCnt(int piCnt) {
         this.piCnt = piCnt;
+    }
+
+    public boolean isStrong() {
+        return isStrong;
+    }
+
+    public void setStrong(boolean strong) {
+        isStrong = strong;
     }
 }

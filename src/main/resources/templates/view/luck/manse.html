@@ -17,10 +17,13 @@
     div.left {
         display: inline-block;
         float: left;
-        width: 50%;
+        width: 30%;
     }
     input[type=text] {
         width: 100px;
+    }
+    tr, td {
+        text-align: center;
     }
 </style>
     <div class="left">
@@ -177,12 +180,13 @@
             </tbody>
         </table>
         <button type="button" onclick="getTongbuen()">전송</button>
-    </div>
 
-    <div style="clear: both">
         <h1>자평진전 격국 풀이</h1>
-        <div id="japyeng_gyeog"></div>
-        <div id="japyeng_explain"></div>
+        <div>
+            <span id="japyeng_gyeog"></span>
+            <span id="japyeng_explain"></span>
+            <span id="japyeng_strong"></span>
+        </div>
         <br>
         <div id="japyeng_theory"></div>
     </div>
@@ -209,8 +213,8 @@ function getTongbuen() {
             console.log("success");
             console.dir(data);
 
-            $("#japyeng_gyeog").html(data.japyeng_gyeog);
-            $("#japyeng_theory").html(data.japyeng_theory);
+            $("#japyeng_gyeog").text(data.japyeng_gyeog);
+            $("#japyeng_theory").text(data.japyeng_theory);
             $("#japyeng_explain").html(data.japyeng_explain);
         },
         error: function (request, status, error){

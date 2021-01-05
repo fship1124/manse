@@ -459,9 +459,8 @@ public class JapyengService {
 
         // 성격 1) : 상관생재
         //           신강하다면 재를 용신으로 삼는다.
-        boolean isStrong = strongFlagService.strongFlag(kanzhi);
 
-        if (isStrong) {
+        if (kanzhi.isStrong()) {
             if ((kanzhi.getPjCnt() + kanzhi.getJjCnt()) >= 1) {
                 theory = "상관생재";
                 theory = "<br> 신강하다면 재를 용신으로 삼는다.";
@@ -475,7 +474,7 @@ public class JapyengService {
 
         //      2) : 상관패인
         //           신약하다면 인수를 용신으로 삼는다. 상관이 왕성하고 인수가 뿌리가 있으면 운에서 인수가 오면 좋다.
-        if (!isStrong) {
+        if (!kanzhi.isStrong()) {
             if ((kanzhi.getSgCnt() + kanzhi.getSsCnt()) >= 2) {
                 if (kanzhi.getBottomYearFlesh().equals(Body.Type.PI.name()) || kanzhi.getBottomDayFlesh().equals(Body.Type.PI.name()) || kanzhi.getBottomHourFlesh().equals(Body.Type.PI.name())
                 || kanzhi.getBottomYearFlesh().equals(Body.Type.PI.name()) || kanzhi.getBottomDayFlesh().equals(Body.Type.PI.name()) || kanzhi.getBottomHourFlesh().equals(Body.Type.PI.name())) {
@@ -492,7 +491,7 @@ public class JapyengService {
 
         //      3) : 상관이 왕하고 신약한데 칠살과 인수가 동시에 투출한 것
         //           상관이 왕성하고 일주가 약한데 칠살과 인수가 동시에 투출했다면 당연히 인수가 용신이 되어 상관을 제압해야 하는데 이런 경우에는 칠살이 인수를 생조하게 되니 결국에는 일주를 돕는 역할을 하게 되므로 일원을 돕는 칠살과 인수가 용신이 된다.
-        if (!isStrong) {
+        if (!kanzhi.isStrong()) {
             if ((kanzhi.getSgCnt() + kanzhi.getSsCnt()) >= 2) {
                 if ((kanzhi.getTopMonthFlesh().equals("PG") || kanzhi.getTopYearFlesh().equals("PG") || kanzhi.getTopHourFlesh().equals("PG"))
                         && (kanzhi.getTopMonthFlesh().equals("PI") || kanzhi.getTopYearFlesh().equals("PI") || kanzhi.getTopHourFlesh().equals("PI")
@@ -536,7 +535,7 @@ public class JapyengService {
 
         // 파격 3) : 상관은 미약한데 신강하고 인수가 있는 것
         if ((kanzhi.getSgCnt() + kanzhi.getSsCnt()) == 1) {
-            if (isStrong) {
+            if (kanzhi.isStrong()) {
                 if ((kanzhi.getPiCnt() + kanzhi.getJiCnt()) >= 1) {
                     theory = "상관은 미약한데 신강하고 인수가 있는 것";
                     explain = "파격";
@@ -578,8 +577,6 @@ public class JapyengService {
          * 파격 2) : 재가 투출하고 칠살이 있는 것은 파격
          */
 
-        boolean isStrong = strongFlagService.strongFlag(kanzhi);
-
         // 성격 1) : 재왕생관
         //           재가 왕성해서 정관을 생하는 것은 월령의 재가 왕하고 사주에 정관이 있어서 왕성한 재가 스스로 관성을 생해 주는 상태가 되는 것이다.
         if ((kanzhi.getPgCnt() + kanzhi.getJjCnt()) >= 3) {
@@ -599,7 +596,7 @@ public class JapyengService {
          //           월령이 재성인데 사주에 식신이 투출한 것이니 겁재의 기운을 식신이 설하여 재성을 보호하는 것
          //           월령이 재인데 신강하고 식신이 투출하면, 식신이 설수(일간의 기운을 설기하는 것)하여 재를 생하는 것이다.
          //           재는 본래 비견 겁재의 겁탈을 꺼리는 것이지만 식신이 있으면 꺼리지 않고 오히려 좋을 수도 있다. 이는 신강한데 식신이 비견과 겁재의 기운을 빼내어 재를 생하게 만들기 때문이다.
-        if (isStrong) {
+        if (kanzhi.isStrong()) {
             if (kanzhi.getTopMonthFlesh().equals("SS") || kanzhi.getTopYearFlesh().equals("SS") || kanzhi.getTopHourFlesh().equals("SS")
             ) {
                 theory = "재투식신";
@@ -686,8 +683,6 @@ public class JapyengService {
          * 파격 1) : 정관이 상관으로부터 극을 당하거나 형충을 당한 것
          */
 
-        boolean isStrong = strongFlagService.strongFlag(kanzhi);
-
          // 성격 1) : 재와 인수를 만나면서 형충파해가 없어야 됨
          //           정관이 있는데 재와 인수가 있다는 것은 월령이 정관인데, 신왕하고 정관이 약할 경우에 사주에 재가 있어서 정관을 생조해 주는 경우와, 신약하고 정관이 강할 경우에 사주에 인수가 있어서 관인상생하는 경우를 말한다.
          //           정관격에 재와 인수가 둘 다 있을 때는 반드시 재와 인수가 서로 극하지 않는 위치에 있어야 정관격이 성격이 될 수 있다.
@@ -732,7 +727,6 @@ public class JapyengService {
     // 편관격
     private Map<String, String> guyckPG(KanzhiVO kanzhi) {
         Map<String, String> rtnMap = new HashMap<>();
-        boolean isStrong = strongFlagService.strongFlag(kanzhi);
 
         /**
          * 성격
@@ -753,7 +747,7 @@ public class JapyengService {
          // 성격 1) : 식신이 칠살을 제복하는 것
          //           월령에 편관이 있고 신강하다면 식신을 용신으로 삼아 제살하는 것
          //           만약 신강하고 칠살이 미약하거나 그와 반대로 칠살이 강하고 신약하다면 이 모두 칠살을 제복하는 식신을 용신으로 삼을 수 없다. 신살양정(일주와 칠살이 균형을 이룸)이 되어야 비로소 칠살격이 성격이 되는 것이다.
-         if (isStrong) {
+         if (kanzhi.isStrong()) {
              if (kanzhi.getSsCnt() >= 1) {
                  theory = "식신이 칠살을 제복하는 것";
                  theory = "<br> 월령에 편관이 있고 신강하다면 식신을 용신으로 삼아 제살하는 것";
@@ -812,7 +806,6 @@ public class JapyengService {
     // 인수격
     private Map<String, String> guyckPIorJI(KanzhiVO kanzhi) {
         Map<String, String> rtnMap = new HashMap<>();
-        boolean isStrong = strongFlagService.strongFlag(kanzhi);
 
         /**
          * 성격
@@ -858,7 +851,7 @@ public class JapyengService {
 
         // 성격 2) : 신인양왕(일간과 인수가 둘 다 왕성함)한데 식상을 써서 설기하거나
         //           신강하고 인수가 왕성하면 인수를 용신으로 쓰지 못하고 식상을 용신으로 삼아서 일주의 기운을 설기해야 한다.
-        if (isStrong) {
+        if (kanzhi.isStrong()) {
             if ((kanzhi.getPiCnt() + kanzhi.getJiCnt()) >= 2) {
                 theory = "신인양왕(일간과 인수가 둘 다 왕성함)한데 식상을 써서 설기하거나";
                 theory = "<br> 신강하고 인수가 왕성하면 인수를 용신으로 쓰지 못하고 식상을 용신으로 삼아서 일주의 기운을 설기해야 한다.";
@@ -962,7 +955,7 @@ public class JapyengService {
         }
 
         // 파격 2) : 신강하고 인수가 중한데 칠살이 투출되면
-        if (isStrong) {
+        if (kanzhi.isStrong()) {
             if ( (kanzhi.getPiCnt() + kanzhi.getJiCnt()) >= 3) {
                 if (kanzhi.getTopMonthFlesh().equals("PG") || kanzhi.getTopYearFlesh().equals("PG") || kanzhi.getTopHourFlesh().equals("PG"))
                 {

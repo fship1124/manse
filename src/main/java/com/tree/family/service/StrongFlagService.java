@@ -50,7 +50,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class StrongFlagService {
 
-    public boolean strongFlag(KanzhiVO kanzhi) {
+    public void strongFlag(KanzhiVO kanzhi) {
         boolean isStrong = false;
 
     //  신강사주
@@ -106,7 +106,6 @@ public class StrongFlagService {
             isStrong = true;
         }
 
-        return isStrong;
+        kanzhi.setStrong(isStrong);
     }
-
 }
